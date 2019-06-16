@@ -45,3 +45,21 @@ Le système doit être quasi instantanné la plupart du temps.
 
 - **bonus**: Je veux un bouton refresh qui raffraichi les données sans recharger la page.
 - **extra bonus**: Je voudrais pouvoir spécifier l'addresse de départ.
+
+# Projet Esoterique
+
+Hop ! Cet exo cherche a voir comment tu te débrouilles avec des langages que tu ne connais pas.
+
+En [OCaml](https://ocaml.org) je cherche a faire un programme simple.
+
+Je cherche a créer un simulateur de liste chaînée (https://fr.wikipedia.org/wiki/Liste_cha%C3%AEn%C3%A9e).
+
+Je veux donc les fonctions:
+
+1) `init()` qui retourne une liste vide
+2) `add(e)` qui retourne la liste avec l'élément ajouté **au début** de la liste
+3) `remove(e)` qui parcours toute la liste et retourne la liste sans l'élément e (si il est là plusieurs fois il faut l'enlever plusieurs fois)
+4) **bonus** `sort()` trie la liste (**extra-bonus** faire ça en O(n.ln(n)))
+
+**IMPORTANT** Tout ceci doit être fait sans utiliser une seule boucle (`while` et `for` sont strictement interdits). 
+Les reccursions sont donc obligatoires.

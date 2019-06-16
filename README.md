@@ -36,11 +36,11 @@ Par exemple: `1 + 2 + 34 – 5 + 67 – 8 + 9` (= 100)
 
 # Api
 
-Je veux une app rails qui me calcule les 5 statios de velib le plus proche du bureau de THP et le nombre de vélo disponible.
+Je veux une app rails qui me calcule les 5 stations de velib les plus proches du bureau de THP et le nombre de vélos disponibles.
 
 API Url: http://api.citybik.es/v2/
 
-Une attention particulière sera portée au tests et au fait de ne pas bouriner l'API a chaque request.
+Une attention particulière sera portée aux tests et au fait de ne pas bouriner l'API à chaque request.
 Le système doit être quasi instantanné la plupart du temps.
 
 - **bonus**: Je veux un bouton refresh qui raffraichi les données sans recharger la page.
@@ -48,11 +48,11 @@ Le système doit être quasi instantanné la plupart du temps.
 
 # Projet Esoterique
 
-Hop ! Cet exo cherche a voir comment tu te débrouilles avec des langages que tu ne connais pas.
+Hop ! Cet exo cherche à voir comment tu te débrouilles avec des langages que tu ne connais pas.
 
-En [OCaml](https://ocaml.org) je cherche a faire un programme simple.
+En [OCaml](https://ocaml.org) je cherche à faire un programme simple.
 
-Je cherche a créer un simulateur de liste chaînée (https://fr.wikipedia.org/wiki/Liste_cha%C3%AEn%C3%A9e).
+Je cherche à créer un simulateur de liste chaînée (https://fr.wikipedia.org/wiki/Liste_cha%C3%AEn%C3%A9e).
 
 Je veux donc les fonctions:
 

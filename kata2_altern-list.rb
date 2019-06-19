@@ -5,7 +5,7 @@
 def altern_list(a, b)
   c = []
   2*a.length.times do |i| c.push(a[i]).push(b[i]) end
-  return c
+  return c.compact
 end
 
 def perform_altern_list

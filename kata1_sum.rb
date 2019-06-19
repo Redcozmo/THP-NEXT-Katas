@@ -28,31 +28,47 @@ def sum_with_recursion(array, sum=0)
   return sum_with_recursion(array, sum)
 end
 
-# speed
-def speed_test(function)
-  start_time = Time.now
-  function
-  end_time = Time.now
-  return end_time - start_time
-end
-
 # execution
 def perform_sums
-  puts "Sum with while = #{sum_with_while([1,2,3,4])}"
-  puts "Sum with each = #{sum_with_each([1,2,3,4])}"
-  puts "Sum with recursion = #{sum_with_recursion([1,2,3,4])}"
+  short_array = [1,2,3,4]
+  large_array = Array.new(10000, 5)
 
-  puts "Duration with large array"
-  large_array = Array.new(10000, 1)
-  puts "Sum with while = #{sum_with_while(large_array)}"
-  puts "Sum with each = #{sum_with_each(large_array)}"
-  puts "Sum with recursion = #{sum_with_recursion(large_array)}"
-  speed_test_while = speed_test(sum_with_while(large_array))
-  speed_test_each = speed_test(sum_with_each(large_array))
-  speed_test_recursion = speed_test(sum_with_recursion(large_array))
-  puts "#{speed_test_while} seconds with sum_with_while"
-  puts "#{speed_test_each} seconds with sum_with_each"
-  puts "#{speed_test_recursion} seconds with sum_with_recursion"
+  puts "With short arrays : "
+  puts "*" * 20
+
+  start_time = Time.now
+  result = sum_with_while(short_array)
+  end_time = Time.now
+  puts "Sum with while = #{result} in #{end_time - start_time}"
+
+  start_time = Time.now
+  result = sum_with_each(short_array)
+  end_time = Time.now
+  puts "Sum with each = #{result} in #{end_time - start_time}"
+
+  start_time = Time.now
+  result = sum_with_recursion(short_array)
+  end_time = Time.now
+  puts "Sum with recursion = #{result} in #{end_time - start_time}"
+
+  puts "*" * 20
+  puts "With large arrays : "
+  puts "*" * 20
+
+  start_time = Time.now
+  result = sum_with_while(large_array)
+  end_time = Time.now
+  puts "Sum with while = #{result} in #{end_time - start_time}"
+
+  start_time = Time.now
+  result = sum_with_each(large_array)
+  end_time = Time.now
+  puts "Sum with each = #{result} in #{end_time - start_time}"
+
+  start_time = Time.now
+  result = sum_with_recursion(large_array)
+  end_time = Time.now
+  puts "Sum with recursion = #{result} in #{end_time - start_time}"
 end
 
 puts perform_sums()

@@ -10,8 +10,6 @@
 # faire le calcul de chacune (6560)
 # trouver lesquelles donnent le résultat demandé
 
-# require kata2_altern-list
-
 # fonction qui renvoie toutes les combinaisons possibles
 def combinaisons(array, cpt = 0, solution = [], solution_previus = []) # array = [7,8,9]
   if cpt == 0
@@ -36,7 +34,7 @@ end
 # fonction qui renvoie toutes les combinaisons possibles de signes pour une taille d'array donnée
 def operators_combinaisons(array, cpt = 0, operators = [], base = [])
   if cpt == 0
-    base = ['+', '-'] # => ["+", "-"]
+    base = ['+', '-']
     if array.length == 2 then return [['+'], ['-']] end
   elsif cpt > array.length - 2
     operators.map! { |e| e.split(',') }
